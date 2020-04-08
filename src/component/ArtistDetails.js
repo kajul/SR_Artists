@@ -33,12 +33,7 @@ class ArtistDetails extends Component {
         )
     }
 
-    /*componentDidMount(){
-        axios.get(`${url}/${this.props.match.params.id}`)
-        .then((response) => {
-            this.setState({details:response.data})
-        });
-    }*/
+  
 
     async componentDidMount(){
         const response = await axios.get(`${url}/${this.props.match.params.id}`)
